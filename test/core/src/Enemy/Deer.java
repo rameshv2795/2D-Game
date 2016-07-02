@@ -1,4 +1,4 @@
-package Player;
+package Enemy;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
@@ -11,7 +11,7 @@ import com.badlogic.gdx.math.Rectangle;
 /**
  * Created by Vinod on 6/28/2016.
  */
-public class Bear {
+public class Deer {
 
     private float current_x,current_y, velocity_y;
     private Texture texture;
@@ -22,26 +22,23 @@ public class Bear {
     private Animation walk_animation,stand_animation;
     //private float time_passed = 0;
 
-    /*Hit Boxes*/
-    Rectangle bottom; /*For ground*/
-    Rectangle head; /*If this hits, enemy dies*/
+    Rectangle bottom;
 
 
-    public Bear(){ //constructor
+    public Deer(){ //constructor
 
         bottom = new Rectangle(1.0f,92.0f,90f,70f);
-        head = new Rectangle(1.0f,92.0f,90f,70f);
 
         velocity_y = 0;
         texture = new Texture(Gdx.files.internal("bear_edit.png"));
         sprite = new Sprite(texture,419,300);
         current_x = 92;
-        setPosition(1,92); //need this to init position
+        setPosition(500,92); //need this to init position
 
-        stand_atlas = new TextureAtlas(Gdx.files.internal("bear_stand.atlas")); /*reference atlas*/
-        stand_animation = new Animation(1/10f,stand_atlas.getRegions()); /*10 images per second, walk_atlas.getRegions() is images*/
+        stand_atlas = new TextureAtlas(Gdx.files.internal("deer_stand.atlas")); /*reference atlas*/
+        stand_animation = new Animation(1/10f,stand_atlas.getRegions()); /*30 images per second, walk_atlas.getRegions() is images*/
         walk_atlas = new TextureAtlas(Gdx.files.internal("bear_walk.atlas")); /*reference atlas*/
-        walk_animation = new Animation(1/10f,walk_atlas.getRegions()); /*10 images per second, walk_atlas.getRegions() is images*/
+        walk_animation = new Animation(1/10f,walk_atlas.getRegions()); /*30 images per second, walk_atlas.getRegions() is images*/
 
     }
 
@@ -56,16 +53,6 @@ public class Bear {
     }
 
     public Boolean hits(Rectangle r){
-
-        if(bottom.overlaps(r)){
-            return true;
-        }
-        return false;
-
-
-    }
-
-    public Boolean hits_enemy (Rectangle r){
 
         if(bottom.overlaps(r)){
             return true;
@@ -125,7 +112,7 @@ public class Bear {
 
     public void draw(SpriteBatch batch,float delta){
 
-        batch.draw(stand_animation.getKeyFrame(delta,false),current_x,current_y); /*false: so doesnt repeat anim*/
+        batch.draw(stand_animation.getKeyFrame(delta,false),current_x,current_y);
 
     }
 
