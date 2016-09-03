@@ -1,0 +1,33 @@
+
+bear_death.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+death4
+  rotate: false
+  xy: 1, 11
+  size: 101, 65
+  orig: 101, 65
+  offset: 0, 0
+  index: -1
+death3
+  rotate: false
+  xy: 104, 9
+  size: 89, 67
+  orig: 89, 67
+  offset: 0, 0
+  index: -1
+death1
+  rotate: false
+  xy: 195, 8
+  size: 67, 68
+  orig: 67, 68
+  offset: 0, 0
+  index: -1
+death2
+  rotate: false
+  xy: 264, 1
+  size: 60, 75
+  orig: 60, 75
+  offset: 0, 0
+  index: -1

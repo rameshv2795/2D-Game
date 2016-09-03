@@ -1,0 +1,12 @@
+
+deer_death.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+deer
+  rotate: false
+  xy: 1, 1
+  size: 91, 47
+  orig: 91, 47
+  offset: 0, 0
+  index: -1

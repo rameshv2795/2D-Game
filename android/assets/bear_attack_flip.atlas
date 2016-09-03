@@ -1,0 +1,47 @@
+
+bear_attack_flip.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+attack3
+  rotate: false
+  xy: 1, 1
+  size: 91, 89
+  orig: 91, 89
+  offset: 0, 0
+  index: -1
+attack1
+  rotate: false
+  xy: 94, 13
+  size: 83, 77
+  orig: 83, 77
+  offset: 0, 0
+  index: -1
+attack6
+  rotate: false
+  xy: 179, 17
+  size: 82, 73
+  orig: 82, 73
+  offset: 0, 0
+  index: -1
+attack5
+  rotate: false
+  xy: 263, 7
+  size: 77, 83
+  orig: 77, 83
+  offset: 0, 0
+  index: -1
+attack4
+  rotate: false
+  xy: 342, 4
+  size: 69, 86
+  orig: 69, 86
+  offset: 0, 0
+  index: -1
+attack2
+  rotate: false
+  xy: 413, 1
+  size: 68, 89
+  orig: 68, 89
+  offset: 0, 0
+  index: -1

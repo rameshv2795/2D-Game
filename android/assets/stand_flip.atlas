@@ -1,0 +1,12 @@
+
+stand_flip.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+stand6
+  rotate: false
+  xy: 1, 1
+  size: 88, 65
+  orig: 88, 65
+  offset: 0, 0
+  index: -1

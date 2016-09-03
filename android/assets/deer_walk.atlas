@@ -1,0 +1,33 @@
+
+deer_walk.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+walk4
+  rotate: false
+  xy: 1, 1
+  size: 78, 93
+  orig: 78, 93
+  offset: 0, 0
+  index: -1
+walk1
+  rotate: false
+  xy: 81, 3
+  size: 78, 91
+  orig: 78, 91
+  offset: 0, 0
+  index: -1
+walk2
+  rotate: false
+  xy: 161, 4
+  size: 77, 90
+  orig: 77, 90
+  offset: 0, 0
+  index: -1
+walk3
+  rotate: false
+  xy: 240, 11
+  size: 83, 83
+  orig: 83, 83
+  offset: 0, 0
+  index: -1
