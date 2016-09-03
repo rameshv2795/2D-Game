@@ -3,10 +3,10 @@ deer_stand.png
 format: RGBA8888
 filter: Nearest,Nearest
 repeat: none
-stand
+moose_stand
   rotate: false
   xy: 1, 1
-  size: 74, 88
-  orig: 74, 88
+  size: 107, 83
+  orig: 107, 83
   offset: 0, 0
   index: -1
