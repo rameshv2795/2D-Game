@@ -17,6 +17,7 @@ import java.awt.Frame;
 import java.awt.Point;
 
 
+import Levels.Level3;
 import Menu.MenuScreen;
 import Enemy.Deer;
 import Levels.Level;
@@ -60,6 +61,13 @@ public class MyGdxGame extends ApplicationAdapter {
 		else if(which_level == 2) {
 
 			current_level = new Level2(batch);
+
+
+		}
+
+		else if(which_level == 3) {
+
+			current_level = new Level3(batch);
 
 
 		}
@@ -122,6 +130,12 @@ public class MyGdxGame extends ApplicationAdapter {
 
 				}
 
+				else if (which_level == 3) {
+					System.out.println("SHOULD BE HERE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+					current_level = new Level3(batch);
+
+				}
+
 			}
 
 			if (current_level.get_level_passed() && Gdx.input.isKeyPressed(Input.Keys.R)) { /*Go to next level*/
@@ -130,6 +144,13 @@ public class MyGdxGame extends ApplicationAdapter {
 					System.out.println("GO TO NEXT LEVEL!!!!!!");
 					which_level = 2;
 					current_level = new Level2(batch);
+
+				}
+
+				else if (which_level == 2) {
+					System.out.println("LEVEL 3!!!!!!");
+					which_level = 3;
+					current_level = new Level3(batch);
 
 				}
 

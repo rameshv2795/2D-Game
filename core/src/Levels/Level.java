@@ -13,6 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import Enemy.Deer;
+import Enemy.Moose;
 import Player.Bear;
 import Surfaces.Bush;
 import Surfaces.Floor;
@@ -25,6 +26,7 @@ public abstract class Level  {
     protected SpriteBatch batch;
     protected Bear bear;
     protected List<Deer> deers;
+    protected List<Moose> moose;
     protected Floor floor;
     protected Floor[] floor_array;
     protected Bush bush;
@@ -44,6 +46,7 @@ public abstract class Level  {
     protected Boolean game_over = false;
 
     protected int deer_count = 0;
+    protected int moose_count = 0;
 
     protected int playtime = 0;
 
@@ -81,6 +84,19 @@ public abstract class Level  {
         for(int i = 0; i < size; i++){
 
             d.add(new Deer());
+
+        }
+
+
+    }
+
+    protected void make_moose(List<Moose> d, int size){ /*Same for all levels*/
+
+        int x_prev = -270;
+
+        for(int i = 0; i < size; i++){
+
+            d.add(new Moose());
 
         }
 
